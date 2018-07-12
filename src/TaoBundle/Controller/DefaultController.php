@@ -7,8 +7,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Symfony\Component\VarDumper\VarDumper;
 use TaoBundle\Entity\Taker;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 class DefaultController extends Controller
 {
@@ -25,6 +25,7 @@ class DefaultController extends Controller
      * @param Request $request
      *
      * @Route("/api/takers/{from}", name="get_takers", defaults={"from"=0}))
+     * @Method({"GET"})
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function getTakersAction(Request $request, $from)
@@ -38,6 +39,7 @@ class DefaultController extends Controller
      * @param Request $request
      *
      * @Route("/api/taker/{id}", name="get_taker"))
+     * @Method({"GET"})
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function getTakerAction(Request $request, $id)
