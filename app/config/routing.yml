@@ -1,0 +1,4 @@
+tao:
+    resource: "@TaoBundle/Controller/"
+    type:     annotation
+    prefix:   /
