@@ -9,6 +9,12 @@ As this is a symfony 3.4 project, please install [composer](https://getcomposer.
 
 Clone the current repository in your server, use the oat.conf for your nginx/fpm configuration or make your [own installation](https://symfony.com/doc/current/setup/web_server_configuration.html).
 
+Make sur to use the following command :
+
+`composer install`
+
+When requested, please provide your database informations.
+
 **How to load ?**
 
 Once your symfony project is correctly installed, you'll have to have a database.
